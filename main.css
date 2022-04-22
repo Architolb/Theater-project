@@ -1,0 +1,115 @@
+.container {  display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 5% 30% 40% 25%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1px 3px;
+    grid-auto-flow: row;
+    background-color: black;
+    grid-template-areas:
+      "header header header"
+      "title title title"
+      ". content ."
+      "location info info";
+  }
+
+.Hero-image {
+    background-image: url(Theater.jpg);
+    height: 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.hero-text {
+    color:white;
+    text-align:center;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+nav li {
+    color: white;
+    display: inline;
+    margin: 20px;
+}
+
+
+
+  
+  .header {  grid-area: header; }
+  
+  .title { grid-area: title; }
+  
+  .content { grid-area: content; }
+  
+  .info { grid-area: info; }
+  
+  .location { grid-area: location; }
+
+  
+  .container1 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Info Shows Social"
+      "Map Chicago The-Piano-Lesson Facebook"
+      "Map \@example\.com A-Raisin-In-The-Sun Twitter"
+      "Map Call-me-now\! Fame Youtube"
+      ". . The-Color-Purple Instagram";
+  }
+  
+  .Social { grid-area: Social; }
+  
+  .Facebook { grid-area: Facebook; }
+  
+  .Twitter { grid-area: Twitter; }
+  
+  .Youtube { grid-area: Youtube; }
+  
+  .Instagram { grid-area: Instagram; }
+  
+  .Shows { grid-area: Shows; }
+  
+  .The-Piano-Lesson { grid-area: The-Piano-Lesson; }
+  
+  .A-Raisin-In-The-Sun { grid-area: A-Raisin-In-The-Sun; }
+  
+  .Fame { grid-area: Fame; }
+  
+  .The-Color-Purple { grid-area: The-Color-Purple; }
+  
+  .Info { grid-area: Info; }
+  
+  .Chicago { grid-area: Chicago; }
+  
+  .\@example\.com { grid-area: \@example\.com; }
+  
+  .Call-me-now\! { grid-area: Call-me-now\!; }
+  
+  .Map { 
+    display: flex;
+    grid-area: Map; 
+    width: 2px;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+
+
+
+
+
+
+
+
+
+}
+  
